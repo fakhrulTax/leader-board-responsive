@@ -113,7 +113,8 @@ header {
 }
 
 /* Palyer */
-.player-blog {
+.player-blog,
+.course-area {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 33px;
@@ -190,4 +191,60 @@ header {
 .author a {
     color: #562EFF;
     text-decoration: none;
+}
+
+/* Course Section */
+.course-section {
+    display: flex;
+    justify-content: center;
+}
+
+.course-thumb img {
+    height: 104px;
+    margin-bottom: 19px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 35px;
+}
+
+.course h2 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1, 5rem;
+    color: #1E1E1E;
+}
+
+.tutor {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: #ED6B4F;
+    text-decoration: none;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-star,
+.fa-star-half-stroke,
+.corse-star span {
+    font-size: 1rem;
+    color: #aeaeae;
+}
+
+.gold-color {
+    color: #FFC014;
+}
+
+.course-duration {
+    color: #FF4A60;
+    font-size: 1rem;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 2px 5px;
 }
