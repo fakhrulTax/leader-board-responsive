@@ -22,6 +22,10 @@ body {
     width: 870px;
 }
 
+img {
+    width: 100%;
+}
+
 /*---------------------
     Header 
 ----------------------*/
@@ -78,4 +82,21 @@ header {
 .nav ul li a img {
     width: 51px;
     height: 51px;
+}
+
+/* Player and Blog */
+.player-blog-area {
+    display: flex;
+    justify-content: center;
+}
+
+/* Palyer */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player-thumb {
+    width: 56px;
+    height: 56px;
 }
