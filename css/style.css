@@ -14,6 +14,10 @@ body {
     font-weight: 400;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .bg-biolate {
     background-color: #562EFF;
 }
@@ -24,6 +28,24 @@ body {
 
 img {
     width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    color: #562EFF;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 31px;
 }
 
 /*---------------------
@@ -91,6 +113,14 @@ header {
 }
 
 /* Palyer */
+.player-blog {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 33px;
+    margin-top: 36px;
+    margin-bottom: 21px;
+}
+
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
