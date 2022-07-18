@@ -145,3 +145,49 @@ header {
     line-height: 1.75rem;
     color: #000000;
 }
+
+.line {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px 46px;
+}
+
+.blog {
+    display: flex;
+    align-items: flex-start;
+}
+
+.blog-thumb {
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+
+.blog-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.author {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
+.author span {
+    color: #9F9F9F;
+}
+
+.author a {
+    color: #562EFF;
+    text-decoration: none;
+}
