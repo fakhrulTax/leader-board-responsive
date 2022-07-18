@@ -126,7 +126,22 @@ header {
     grid-template-columns: repeat(3, 1fr);
 }
 
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 .player-thumb {
     width: 56px;
     height: 56px;
+    margin-right: 16px;
+}
+
+.player h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #000000;
 }
