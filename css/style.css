@@ -199,6 +199,10 @@ header {
     justify-content: center;
 }
 
+.course-area {
+    margin-top: 0;
+}
+
 .course-thumb img {
     height: 104px;
     margin-bottom: 19px;
@@ -247,4 +251,133 @@ header {
     background: #FFE4E8;
     border-radius: 14.6913px;
     padding: 2px 5px;
+}
+
+.mobile-icon {
+    display: none;
+}
+
+/* Responsive Design */
+
+/* Small Screen */
+@media screen and (max-width: 576px) {
+
+    /* Mobile Menu */
+    .mobile-icon {
+        display: block;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 94px;
+        left: -1000px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: left 0.2s ease-in;
+    }
+
+    .mobile-menu nav ul {
+        left: 0;
+    }
+
+    .nav ul li {
+        width: 100%;
+    }
+
+    .nav ul li a {
+        padding: 12px;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .players {
+        grid-template-columns: 1fr;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 26px 0px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+    }
+
+    .course-thumb img {
+        width: 80%;
+    }
+
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /* Mobile Menu */
+    .mobile-icon {
+        display: block;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 94px;
+        left: -1000px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: left 0.2s ease-in;
+    }
+
+    .mobile-menu nav ul {
+        left: 0;
+    }
+
+    .nav ul li {
+        width: 100%;
+    }
+
+    .nav ul li a {
+        padding: 12px;
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 26px 0px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 0;
+    }
+
+    .course-thumb img {
+        width: 50%;
+    }
+
+    .course-info {
+        justify-content: start;
+    }
+
+    .corse-star {
+        margin-right: 30px;
+    }
+
 }

@@ -21,9 +21,12 @@
     <!-- Header Start -->
     <header class="bg-biolate">
         <div class="container">
-            <div class="header">
+            <div class="header" id="header">
                 <div class="logo">
                     <a href=""><img src="images/icons/logo.png" alt=""> <span>Idea</span></a>
+                </div>
+                <div class="mobile-icon" onclick="mobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <nav class="nav">
                     <ul>
@@ -226,6 +229,12 @@
         <!-- Course Section End -->
     </main>
     <!-- Main Section End -->
+    <script>
+        function mobileMenu() {
+            var header = document.getElementById("header");
+            header.classList.toggle("mobile-menu");
+        }
+    </script>
 </body>
 
 </html>
